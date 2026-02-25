@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "72", "72full", Arial, sans-serif; background-color: #F5F6F7; color: #32363A; }
+    .wrapper { max-width: 700px; margin: 30px auto; background: white; border: 1px solid #D9D9D9; }
+    .header { background-color: #003366; padding: 0; }
+    .header-top { display: flex; align-items: center; padding: 16px 24px; border-bottom: 3px solid #F0AB00; }
+    .sap-logo { font-size: 28px; font-weight: 700; color: #F0AB00; letter-spacing: 2px; margin-right: 20px; }
+    .header-title { color: white; }
+    .header-title h1 { font-size: 18px; font-weight: 600; }
+    .header-title p { font-size: 13px; opacity: 0.75; margin-top: 3px; }
+    .candidate-bar { background-color: #F0AB00; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .candidate-bar h2 { font-size: 16px; font-weight: 700; color: #003366; }
+    .candidate-bar span { font-size: 13px; color: #003366; font-weight: 600; }
+    .body { padding: 24px; }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .info-item { background: #F5F6F7; border-left: 3px solid #003366; padding: 10px 14px; }
+    .info-item label { font-size: 11px; text-transform: uppercase; color: #6A6D70; font-weight: 600; display: block; margin-bottom: 4px; }
+    .info-item span { font-size: 14px; color: #32363A; font-weight: 500; }
+    .score-section { display: flex; align-items: center; justify-content: space-between; background: #003366; padding: 16px 20px; border-radius: 2px; margin-bottom: 20px; }
+    .score-label { color: #F0AB00; font-size: 12px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; }
+    .score-value { font-size: 36px; font-weight: 700; color: white; }
+    .score-value span { font-size: 16px; opacity: 0.6; }
+    .badge { padding: 8px 20px; border-radius: 2px; font-weight: 700; font-size: 14px; letter-spacing: 1px; }
+    .pass { background-color: #107E3E; color: white; }
+    .fail { background-color: #BB0000; color: white; }
+    .summary-box { border: 1px solid #D9D9D9; border-top: 3px solid #F0AB00; padding: 16px; margin-bottom: 20px; background: #FAFAFA; }
+    .summary-box h3 { font-size: 12px; text-transform: uppercase; color: #6A6D70; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; }
+    .summary-box p { font-size: 14px; line-height: 1.6; color: #32363A; }
+    .section-title { font-size: 12px; text-transform: uppercase; color: #6A6D70; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background-color: #003366; }
+    thead th { color: white; padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    tbody td { padding: 12px; border-bottom: 1px solid #E5E5E5; font-size: 13px; vertical-align: top; line-height: 1.5; }
+    tbody tr:nth-child(even) { background-color: #F5F6F7; }
+    .score-cell { text-align: center; font-weight: 700; font-size: 16px; color: #003366; min-width: 60px; }
+    .footer { background: #F5F6F7; border-top: 1px solid #D9D9D9; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-left { font-size: 11px; color: #6A6D70; }
+    .footer-logo { font-size: 13px; font-weight: 700; color: #003366; letter-spacing: 2px; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="header-top">
+        <div class="sap-logo">SAP</div>
+        <div class="header-title">
+          <h1>Candidate Interview Report</h1>
+          <p>SAP SuccessFactors | Talent Acquisition</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="candidate-bar">
+      <h2>Chandler Bing</h2>
+      <span>Java Developer</span>
+    </div>
+
+    <div class="body">
+
+      <div class="info-grid">
+        <div class="info-item">
+          <label>Email</label>
+          <span>Joseph.lu@sap.com</span>
+        </div>
+        <div class="info-item">
+          <label>Phone</label>
+          <span>888-222-1111</span>
+        </div>
+        <div class="info-item">
+          <label>Applied Role</label>
+          <span>Java Developer</span>
+        </div>
+        <div class="info-item">
+          <label>Interview Date</label>
+          <span>February 25, 2026</span>
+        </div>
+      </div>
+
+      <div class="score-section">
+        <div>
+          <div class="score-label">Overall Score</div>
+          <div class="score-value">5<span> / 10</span></div>
+        </div>
+        <div>
+          <div class="score-label" style="text-align:right; margin-bottom:6px;">Recommendation</div>
+          <span class="badge fail">FAIL</span>
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <h3>Evaluation Summary</h3>
+        <p>No summary available</p>
+      </div>
+
+      <div class="section-title">Interview Responses</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:35%">Question</th>
+            <th style="width:50%">Answer</th>
+            <th style="width:15%">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+  <tr>
+    <td>Explain the difference between `==` and `.equals()` in Java. When would you use each?</td>
+    <td>A</td>
+    <td class="score-cell">5</td>
+  </tr>
+
+  <tr>
+    <td>Can you describe the four main principles of Object-Oriented Programming and provide a short example of one in Java?</td>
+    <td>B</td>
+    <td class="score-cell">5</td>
+  </tr>
+
+  <tr>
+    <td>What is the difference between a `List`, `Set`, and `Map` in Java? When would you use each?</td>
+    <td>C</td>
+    <td class="score-cell">5</td>
+  </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">Generated by SAP HR Interview Assistant</div>
+      <div class="footer-logo">SAP</div>
+    </div>
+
+  </div>
+</body>
+</html>
